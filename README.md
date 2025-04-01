@@ -11,6 +11,8 @@
 
 ## 📥 Installation
 
+https://github.com/user-attachments/assets/58fbad1f-11c4-40d6-a176-75b32bc19636
+
 1. **Install Node.js and npm if not installed already**  
 ```bash
 curl -sSL https://raw.githubusercontent.com/zunxbt/installation/main/node.sh | bash
