@@ -49,7 +49,7 @@ You need to visit the URL which you will find on your terminal there and then, l
 
 ## ⚠️ Issue :
 - If you can't get OTP in your email and also can't login using google, then use this method :
-- Install ngrok
+- Install ngrok in different tab on the same vps ( don't close previous tab where gensyn is running)
 ```bash
 wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz && tar -xvzf ngrok-v3-stable-linux-amd64.tgz && sudo mv ngrok /usr/local/bin/
 ```
