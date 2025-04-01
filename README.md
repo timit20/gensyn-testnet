@@ -47,7 +47,7 @@ You need to visit the URL which you will find on your terminal there and then, l
 6. **Detach from `screen session`**
 - Use `Ctrl + A` and then press `D` to detach from this screen session.
 
-## ⚠️ Issue :
+## ⚠️ OTP Issue / URL not accessible :
 - If you can't get OTP in your email and also can't login using google, then use this method :
 - Install ngrok in different tab on the same vps ( don't close previous tab where gensyn is running)
 ```bash
@@ -58,4 +58,4 @@ wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz && tar
 - Now go to `Your authtoken` section and then click on "show authtoken" option and then copy that command
 - Now open your VPS in other tab and paste the command
 - Now use this command `ngrok http 3000`
-- Then click on the following url with ngrok domain and then access gynsyn page and authorise with google account or email address (working, tested)
+- Then click on the following url with ngrok domain and then access gynsyn page and login using email address (✅ working, tested)
