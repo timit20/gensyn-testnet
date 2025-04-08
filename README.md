@@ -47,8 +47,8 @@ Your public key has been saved in /home/codespace/.ssh/id_rsa.pub
 
 - You should use this command to see those ssh key :
     - If you are using Linux/macOS (WSL) : `cat path/of/that/publickey` , in my case, it would be : `cat /home/codespace/.ssh/id_rsa.pub`
-    - If you are using Command Prompt : `type path/of/that/publickey`, in my case, it would be : `type /home/codespace/.ssh/id_rsa.pub`
-    - If you are using PowerShell : `Get-Content path/of/publickey`, in my case, it would be : `Get-Content /home/codespace/.ssh/id_rsa.pub`
+    - If you are using Command Prompt : `type path\of\that\publickey`, in my case, it would be : `type \home\codespace\.ssh\id_rsa.pub`
+    - If you are using PowerShell : `Get-Content path\of\that\publickey`, in my case, it would be : `Get-Content \home\codespace\.ssh\id_rsa.pub`
 - Now copy this public key and go to hosting provider from where you bought GPU
 - After visiting the web hosting provider website, navigate to settings and there paste and save your ssh key
 - Now, copy the command you received after renting the GPU instance and paste it into the terminal where you generated the public key.
