@@ -97,7 +97,7 @@ python3 -m venv .venv && . .venv/bin/activate && ./run_rl_swarm.sh
 After running the Gensyn node, it is essential to back up the swarm.pem file from your remote server (GPU or VPS) to your local PC. If you lose this file, your contribution will also be lost. Some GPU servers do not support SCP or SFTP, so I will provide distinct methods — one specifically for GPU servers and another for VPS.
 
 ### 1. Back up `swarm.pem` from GPU server to local PC
-- For this, you must need to connect to GPU server using [SSH](https://github.com/zunxbt/gensyn-testnet/edit/main/README.md#-connect-via-ssh) (Recommened to do these stuffs on Command Prompt or Power Shell)
+- For this, you must need to connect to GPU server using [SSH](https://github.com/zunxbt/gensyn-testnet?tab=readme-ov-file#-connect-via-ssh) (Recommened to do these stuffs on Command Prompt or Power Shell)
 - Now exit from this GPU server using this command
 ```
 exit
