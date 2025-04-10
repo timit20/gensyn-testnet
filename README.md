@@ -78,7 +78,7 @@ screen -S gensyn
 ```
 5. **Run the swarm**
 ```bash
-curl -sSL https://raw.githubusercontent.com/zunxbt/gensyn-testnet/main/gensyn.sh | bash
+cd $HOME && [ -d gensyn-testnet ] && rm -rf gensyn-tetsnet; git clone https://github.com/zunxbt/gensyn-testnet.git && cd gensyn-testnet
 ```
 - It will ask some questions, you should send response properly
 - ```Would you like to push models you train in the RL swarm to the Hugging Face Hub? [y/N]``` : Write `N`
