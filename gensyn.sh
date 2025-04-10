@@ -10,7 +10,7 @@ SWARM_DIR="$HOME/rl-swarm"
 TEMP_DATA_PATH="$SWARM_DIR/modal-login/temp-data"
 HOME_DIR="$HOME"
 
-if [ -f "$SWARM_DIR/rl-swarm/swarm.pem" ]; then
+if [ -f "$SWARM_DIR/swarm.pem" ]; then
     echo -e "${BOLD}${YELLOW}You already have an existing ${GREEN}swarm.pem${YELLOW} file.${NC}\n"
     echo -e "${BOLD}${YELLOW}Do you want to:${NC}"
     echo -e "${BOLD}1) Use the existing swarm.pem${NC}"
