@@ -72,17 +72,13 @@ sudo apt update && sudo apt install -y python3 python3-venv python3-pip curl wge
 ```bash
 curl -sSL https://raw.githubusercontent.com/zunxbt/installation/main/node.sh | bash
 ```
-4. **Clone this repository**
-```bash
-cd $HOME && [ -d rl-swarm ] && rm -rf rl-swarm; git clone https://github.com/zunxbt/rl-swarm.git && cd rl-swarm
-```
-5. **Create a `screen` session**
+4. **Create a `screen` session**
 ```bash
 screen -S gensyn
 ```
-6. **Run the swarm**
+5. **Run the swarm**
 ```bash
-python3 -m venv .venv && . .venv/bin/activate && ./run_rl_swarm.sh
+curl -sSL https://raw.githubusercontent.com/zunxbt/gensyn-testnet/main/gensyn.sh | bash
 ```
 - It will ask some questions, you should send response properly
 - ```Would you like to push models you train in the RL swarm to the Hugging Face Hub? [y/N]``` : Write `N`
