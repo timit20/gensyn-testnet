@@ -17,7 +17,7 @@ if [ -f "$SWARM_DIR/swarm.pem" ]; then
     echo -e "${BOLD}${RED}2) Delete existing swarm.pem and start fresh${NC}"
 
     while true; do
-        read -p "$(echo -e ${BOLD}Enter your choice \(1 or 2\): ${NC})" choice
+        read -p "$(echo -e "${BOLD}Enter your choice (1 or 2): ${NC}")" choice
         if [ "$choice" == "1" ]; then
             echo -e "\n${BOLD}${YELLOW}[✓] Using existing swarm.pem...${NC}"
             mv "$SWARM_DIR/swarm.pem" "$HOME_DIR/"
