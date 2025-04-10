@@ -17,7 +17,7 @@ if [ -f "$SWARM_DIR/swarm.pem" ]; then
     echo -e "${BOLD}${RED}2) Delete existing swarm.pem and start fresh${NC}"
 
     while true; do
-        read -p "$(echo -e "${BOLD}Enter your choice (1 or 2): ${NC}")" choice
+        read -p $'\e[1mEnter your choice (1 or 2): \e[0m' choice
         if [ "$choice" == "1" ]; then
             echo -e "\n${BOLD}${YELLOW}[✓] Using existing swarm.pem...${NC}"
             mv "$SWARM_DIR/swarm.pem" "$HOME_DIR/"
@@ -39,7 +39,7 @@ if [ -f "$SWARM_DIR/swarm.pem" ]; then
             cd $HOME && git clone https://github.com/zunxbt/rl-swarm.git > /dev/null 2>&1
             break
         else
-            echo -e "/n${BOLD}${RED}[✗] Invalid choice. Please enter 1 or 2.${NC}"
+            echo -e "\n${BOLD}${RED}[✗] Invalid choice. Please enter 1 or 2.${NC}"
         fi
     done
 else
