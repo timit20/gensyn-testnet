@@ -11,6 +11,8 @@
 
 
 ## 🌐 Rent GPU
+> [!Note]
+> **Renting GPU is not necessarily needed, you can still run this node on VPS or on WSL, but you may face OOM error plus you may have less winning rate, that is why my recommendation is renting a GPU if you can, otherwise you can proceed with VPS or WSL.**
 - Visit : [Quick Pod Website](https://console.quickpod.io?affiliate=64e0d2b2-59ee-4989-a05f-f4c3b6dbb2e4)
 - Sign Up using email address
 - Go to your email and verify your Quick Pod account
