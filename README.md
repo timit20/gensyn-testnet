@@ -25,7 +25,7 @@
 
 ## 🛜 Connect via SSH (Only for GPU)
 > [!Note]
-> **This step is only required if you running this node on GPU, if you want to use VPS or WSL, then skip this step and login to your VPS server using username and password which u received from the VPS provider and then move to [installation](https://github.com/zunxbt/gensyn-testnet/edit/main/README.md#-installation) section**
+> **This step is only required if you running this node on GPU, if you want to use VPS or WSL, then skip this step and login to your VPS server using username and password which u received from the VPS provider and then move to [installation](https://github.com/zunxbt/gensyn-testnet?tab=readme-ov-file#-installation) section**
 - First open a terminal (this could be either WSL / Codespace / Command Prompt)
 - Use this below command to generate SSH-Key
 ```
