@@ -21,7 +21,7 @@
 - Now choose a GPU and click on `Create POD` button
 - Your GPU server will be deployed soon
 - You can simply click on `Connect` button and then choose `Connect to Web Terminal`
-- But if you are using different gpu/vps provider then you should use `Connect via SSH` method mentioned below
+- But if you are using different gpu provider then you should use `Connect via SSH` method mentioned below
 
 ## 🛜 Connect via SSH (Only for GPU)
 > [!Note]
