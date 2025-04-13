@@ -93,53 +93,25 @@ cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-
 - Use `Ctrl + A` and then press `D` to detach from this screen session.
 
  ## 🔄️ Back up `swarm.pem`
-After running the Gensyn node, it is essential to back up the swarm.pem file from your remote server (GPU or VPS) to your local PC. If you lose this file, your contribution will also be lost. Some GPU servers do not support SCP or SFTP, so I will provide distinct methods — one specifically for GPU servers and another for VPS.
+After running the Gensyn node, it is essential to back up the swarm.pem file from your remote server (GPU or VPS) to your local PC. If you lose this file, your contribution will also be lost. I will mention 2 method , 1 is simpler but not that much secure and another one is secure but a lil bit complex for the beginners
 
-### 1. Back up `swarm.pem` from GPU server to local PC
-- For this, you must need to connect to GPU server using [SSH](https://github.com/zunxbt/gensyn-testnet?tab=readme-ov-file#-connect-via-ssh) (Recommened to do these stuffs on Command Prompt or Power Shell)
-- Now exit from this GPU server using this command
+### Method 1 (Very Simple)
+- First make sure that you are in `rl-swarm` folder and then run this command
 ```
-exit
+[ -f backup.sh ] && rm backup.sh; curl -sSL -O https://raw.githubusercontent.com/zunxbt/gensyn-testnet/main/backup.sh && chmod +x backup.sh && ./backup.sh
 ```
-- Now replace `SSH-COMMAND` in the below command with the command which your received from provider, then replace `YOUR-PC-PATH` where you want to download this swarm.pem file and then execute it on your Command prompt or Power shell
-```
-SSH-COMMAND "cat ~/rl-swarm/swarm.pem" > "YOUR-PC-PATH\swarm.pem"
-```
-- In my case, this command looks like this :
-```
-ssh -p 69 root@69.69.69.69 "cat ~/rl-swarm/swarm.pem" > "C:\Users\USER\Downloads\swarm.pem"
-```
-- Done, your `swarm.pem` file is now saved on your local system
+- It will show something like this in your terminal
+ 
+![image](https://github.com/user-attachments/assets/489b02a8-40e1-4c91-b29b-9d9c30604e8c)
 
-### 2. Back up `swarm.pem` from VPS server to local PC
-- For this, I recommend to use `Command Prompt` or `Power Shell`
-- If you are using **Command Prompt** then use the below commmand, make sure to replace `VPS-USERNAME` , `VPS-IP`and `YOUR-PC-PATH` (where you want to save swarm.pem file) with actual value
-```
-scp VPS-USERNAME@VPS-IP:~/rl-swarm/swarm.pem "YOUR-PC-PATH"
-```
-- In my case this command looks like this :
-```
-scp root@69.69.69.69:~/rl-swarm/swarm.pem "C:\Users\USER\Downloads"
-```
-- If you are using **Powershell** then use the below commmand, make sure to replace `VPS-USERNAME` , `VPS-IP`and `YOUR-PC-PATH`(where you want to save swarm.pem file) with actual value
-```
-scp VPS-USERNAME@VPS-IP:~/rl-swarm/swarm.pem 'YOUR-PC-PATH'
-```
-- In my case this command looks like this :
-```
-scp root@69.69.69.69:~/rl-swarm/swarm.pem 'C:\Users\USER\Downloads'
-```
+1️⃣ **VPS/GPU/WSL to PC**
+- If you want to backup `swarm.pem`(Must), `userData.json` (Optional), `userApiKey.json` (Optional) from VPS/GPU/WSL to your PC then simply **visit the URL** (don't use the commands mentioned below) and press `Ctrl + S` to save these files.
 
-### 3. Back up `swarm.pem` from WSL to local PC
-- First, open `Command Prompt` or `Windows Powershell`
-- Then use the below command, make sure to replace `YOUR-WSL-USERNAME` `YOUR-PC-PATH`(where you want to save swarm.pem file) with actual value
-```
-copy "\\wsl$\Ubuntu\home\YOUR-WSL-USERNAME\rl-swarm\swarm.pem" "YOUR-PC-PATH"
-```
-- In my case, it looks like this
-```
-copy "\\wsl$\Ubuntu\home\zun24\rl-swarm\swarm.pem" "C:\Users\USER\Downloads"
-```
+2️⃣ **One VPS/GPU/WSL to another VPS/GPU/WSL**
+- If you want to backup `swarm.pem`(Must), `userData.json` (Optional), `userApiKey.json` (Optional) from One VPS/GPU/WSL to another VPS/GPU/WSL then simply use the **commands** on another VPS/GPU/WSL where you want to use these files.
+
+### Method 2 (Manual)
+If you face any issue with this automated back up process then it is recommended to use manual guide : [Click Here](https://github.com/zunxbt/gensyn-testnet/blob/main/BACKUP.md)
 
 ## 🟢 Node Status
 
