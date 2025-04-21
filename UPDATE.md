@@ -3,7 +3,7 @@
 
 ### 1. First kill all the existing gensyn screen session
 ```
-pkill -f "SCREEN.*gensyn"
+screen -ls | grep '\.gensyn' | awk '{print $1}' | xargs -r -I{} screen -S {} -X quit
 ```
 ### 2. Create a screen session named `gensyn`
 ```
@@ -13,6 +13,11 @@ screen -S gensyn
 ```
 cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-testnet.git && chmod +x gensyn-testnet/gensyn.sh && ./gensyn-testnet/gensyn.sh
 ```
+- After running the above command, it will show something like this :
+  
+![Screenshot 2025-04-21 075405](https://github.com/user-attachments/assets/37d28590-6f4f-4ecd-9cb6-c831a821e400)
+
+- You should choose 1 to use existing `swarm.pem` file
 >[!Note]
 > It will ask this question - ```Would you like to push models you train in the RL swarm to the Hugging Face Hub? [y/N]``` here Write `N` and at last you will see this : ```Your training session is about to begin``` then you can detach from this gensyn screen session
 
