@@ -3,7 +3,7 @@
 
 ### 1. First kill all the existing gensyn screen session
 ```
-screen -ls | grep '\.gensyn' | awk '{print $1}' | xargs -r -I{} screen -S {} -X quit
+pkill -f "SCREEN.*gensyn"
 ```
 ### 2. Create a screen session named `gensyn`
 ```
