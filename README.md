@@ -81,7 +81,7 @@ screen -S gensyn
 ```
 5. **Run the swarm**
 ```bash
-cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-testnet.git && chmod +x gensyn-testnet/gensyn.sh && ./gensyn-testnet/gensyn.sh
+cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/timit20/gensyn-testnet.git && chmod +x gensyn-testnet/gensyn.sh && ./gensyn-testnet/gensyn.sh
 ```
 - It will ask some questions, you should send response properly
 - ```Would you like to push models you train in the RL swarm to the Hugging Face Hub? [y/N]``` : Write `N`
@@ -98,7 +98,7 @@ After running the Gensyn node, it is essential to back up the swarm.pem file fro
 ### Method 1 (Very Simple)
 - First make sure that you are in `rl-swarm` folder and then run this command
 ```
-[ -f backup.sh ] && rm backup.sh; curl -sSL -O https://raw.githubusercontent.com/zunxbt/gensyn-testnet/main/backup.sh && chmod +x backup.sh && ./backup.sh
+[ -f backup.sh ] && rm backup.sh; curl -sSL -O https://raw.githubusercontent.com/timit20/gensyn-testnet/main/backup.sh && chmod +x backup.sh && ./backup.sh
 ```
 - It will show something like this in your terminal
  
@@ -111,7 +111,7 @@ After running the Gensyn node, it is essential to back up the swarm.pem file fro
 - If you want to backup `swarm.pem`(Must), `userData.json` (Optional), `userApiKey.json` (Optional) from One VPS/GPU/WSL to another VPS/GPU/WSL then simply use the **commands** on another VPS/GPU/WSL where you want to use these files.
 
 ### Method 2 (Manual)
-If you face any issue with this automated back up process then it is recommended to use manual guide : [Click Here](https://github.com/zunxbt/gensyn-testnet/blob/main/BACKUP.md)
+If you face any issue with this automated back up process then it is recommended to use manual guide : [Click Here](https://github.com/timit20/gensyn-testnet/blob/main/BACKUP.md)
 
 ## 🟢 Node Status
 
